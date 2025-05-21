@@ -1,8 +1,0 @@
-# run: conda env create --file environment.yml
-name: bmex-db
-dependencies:
-- python>=3.9
-- anaconda
-- pip
-- numpy
-- pandas
