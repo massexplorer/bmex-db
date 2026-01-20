@@ -5,6 +5,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from quantities import *
+import pybmc
 
 def build_db(model_to_update='all'):
     print("Starting build_db...")  
@@ -78,6 +79,7 @@ def build_db(model_to_update='all'):
         master_df.to_hdf('./bmex_masses.h5', key=mname, index=False)
 
         print(f"Database saved for {mname}!")  # Confirmation message
+
 
 
 if __name__ == "__main__":

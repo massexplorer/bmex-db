@@ -23,6 +23,8 @@ def MassExcess(df, W):
     return df
 
 
+
+
 def BetaMinusDecay(df, W):
     df['BetaMinusDecay'+Wstring[W]] = pd.Series(dtype=float)
     for i in range(len(df)):
